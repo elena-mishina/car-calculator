@@ -117,7 +117,45 @@ h3 {
 }
 
 input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+label {
+    position: relative;
+    padding-left: 35px;
     cursor: pointer;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid tomato;
+    border-radius: 50%;
+}
+
+input:checked + label:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 10px;
+    height: 10px;
+    background-color: tomato;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:hover + label:before {
+    background-color: #ffffff;
 }
 
 .colors {
