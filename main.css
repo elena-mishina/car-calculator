@@ -1,0 +1,169 @@
+body {
+    font-family: 'Scada', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.container {
+    width: 1000px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.car {
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+}
+
+.car-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.model-summary {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+}
+
+.model-specs, .model-price {
+    margin-bottom: 15px;
+}
+
+.model-price {
+    font-size: 28px;
+    color: teal;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 175px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: #ffffff;
+    background-color: tomato;
+    line-height: 36px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.button:after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 200px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgb(255, 255, 255, 0.5) 100%);
+    left: 0;
+    top: -80px;
+    z-index: 2;
+    transform: rotate(45deg);
+    animation-name: btnAnimate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+        
+@keyframes btnAnimate {
+    0% {
+        left: -10px;
+    }
+    100% {
+        left: 102%;
+    }
+}
+
+.button:hover {
+    background-color: teal;
+}
+
+.img-holder {
+    text-align: center;
+}
+
+.form {
+    padding-top: 25px;
+    padding-bottom: 75px;
+    background-color: #e4e4e4;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-block {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    cursor: pointer;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-selector {
+    display: flex;
+    justify-content: center;
+}
+
+.color-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.color-black {
+    background-color: #000000;
+}
+
+.color-white {
+    background-color: #ffffff;
+}
+
+.color-silver {
+    background-color: #b2b2b2;
+}
+
+.color-gray {
+    background-color: #535456;
+}
+
+.color-blue {
+    background-color: #325488;
+}
+
+.color-red {
+    background-color: #a92324;
+}
+
+.color-orange {
+    background-color: #993e1b;
+}
